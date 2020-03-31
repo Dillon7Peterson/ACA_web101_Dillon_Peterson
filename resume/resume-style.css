@@ -1,12 +1,9 @@
-header{
+body{
     display: grid;
     grid-template-rows: 30% 40% 30%
+    grid-template-columns: 33% 34% 33%
 }
-
-main{
-    display: grid
-    grid-template-columns: 34% 33% 33%
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    
    
 
 

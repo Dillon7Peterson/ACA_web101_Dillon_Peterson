@@ -1,10 +1,83 @@
 body{
+    height: 1100px;
     display: grid;
-    grid-template-rows: 30% 40% 30%
-    grid-template-columns: 33% 34% 33%
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+
 }
+header{
+   display:grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size-adjust: initial;
+    font-size: 500%;
+    background-color: rgb(103, 245, 255);
+}
+aside{
+    width: auto;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+main{
+    border: 3 px solid black;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+article{
+    background-color: linen;
+    height: auto;
+    width: auto;
     
-   
+}
 
+div{
+    border: 1px solid whitesmoke;
+    background-color: rgb(72, 202, 152);
+    height: auto;
+    width: auto;
+}
+.with-two-columns{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid black;
 
-
+}
+section{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*.with-three-columns{
+    
+}*/
+h2{
+    display: flex;
+    justify-content: center;
+}
+#Engineer{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+#team-lead{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+b{
+    font-size: 125%;
+}
+.reference-list{
+    border: 1px solid black;
+}
+.references{
+    border: 1px solid black;
+}

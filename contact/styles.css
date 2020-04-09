@@ -1,0 +1,35 @@
+body{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 10% 50% 40%;
+}
+
+main{
+  border: 5px, solid, black;
+  padding: 10px;
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  
+}
+
+section{
+  border: 5px, solid, gray;
+  display: grid;
+  grid-column: 1/2;
+}
+
+div{
+  border: 5px, solid, blue;
+  display: grid;
+  grid-row: 2/4;
+  display: flex;
+  flex: column;
+}
+
+/*aside{
+  border: 5px, solid, red;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}

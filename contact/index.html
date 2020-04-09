@@ -6,50 +6,61 @@
   <title>Contact Page</title>
 </head>
 
-<body>
+<body class="container">
   <header>Contact Me</header>
     <main>
-      <section>
+      <section class="top">
         <h2>How did you hear about me?</h2>
           <form class="check-boxes">
             <form action="">
-              <input type="checkbox" id="classmates" name="classmates" value="classmates">
-                <label for="classmates"> Classmates</label><br>
-                  <input type="checkbox" id="resume-submission" name="resume-submission" value="resume-submission">
-                    <label for="resume-submission"> Resume-submission</label><br>
-                      <input type="checkbox" id="linkdin" name="linkdin" value="linkdin">
-                       <label for="linkdin"> LinkdIn</label><br>
-                          <input type="checkbox" id="coding-academy" name="coding-academy" value="coding-academy">
-                            <label for="coding-academy">Coding Academy Rec</label><br>
-                                <input type="submit" value="Submit">
+              <div class="classmates">
+                <input type="checkbox" id="classmates" name="classmates" value="classmates">
+                    <label for="classmates"> Classmates</label>
+                      <br>
+                <input type="checkbox" id="resume-submission" name="resume-submission" value="resume-submission">
+                  <label for="resume-submission"> Resume-submission</label> 
+                    <br>
+                <input type="checkbox" id="linkdin" name="linkdin" value="linkdin">
+                  <label for="linkdin"> LinkdIn</label>
+                      <br>
+                <input type="checkbox" id="coding-academy" name="coding-academy" value="coding-academy">
+                  <label for="coding-academy">Coding Academy Rec</label>
+                </div>
+          
             </form>
           </section>
             
           </form>
-        <section class="b-day">
+        <section class="bottom">
           <p>For a special birthday wish, use the selector below to share your date!</p>
-            <form>
+            <form class="b-day">
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" name="birthday">
             </form>
           </section>
     </main>
     <div class="div-upper">
-      <h3>Share your Email</h3><br>
+      <h3>Share your Email</h3>
         <form>
           <label for="email-address">Email Address:</label><br>
             <input type="text" id="email-address" name="email">
         </form>
     </div>
     <div class="div-lower">
-          <form>
-            <label for="contacted">Would you like to be contacted?</label><br>
+          <form class="bottomright">
+         <p>
+            <label for="contacted">Would you like to be contacted?</label>
+          </p>
+            <p>
               <input type="radio" id="yes" name="yes" value="yes">
                 <label for="yes">Yes</label>
-                  <input type="radio" id="no" name="no" value="no">
-                    <label for="no">No</label><br>
+            </p>
+                <p>
+                 <input type="radio" id="no" name="no" value="no">
+                    <label for="no">No</label>
+                 </p> 
                       <input type="submit" value="Submit">
-          </form>
+            </form>
     </div>
 </body>
 </html>

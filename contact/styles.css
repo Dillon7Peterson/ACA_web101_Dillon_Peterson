@@ -11,27 +11,100 @@ header{
 }
 main{
   width: auto;
-  
   display: grid;
+  grid-template-rows: 50% 50%;
   grid-row: 2/4;
   grid-column: 1/2;  
 }
 
 section{
-  border: 5px solid black;
   background-color: rgb(13, 155, 238);
+}
+.bottom{
+  display: flex;
+  justify-content: center;
   display: grid;
-  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
-div{
+
+/*div{
   border: 10px solid red;
-  display: grid;
-  grid-template-rows: 1rm 1rm;
   background-color: burlywood;
-}
+}*/
 h2{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.div-upper{
+  display: grid;
+  grid-template-rows: 75% 25%;
+}
+h3{
+  display: grid;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-size: 50px;
+}
+form{
+  border: 5px solid black;
+  display: flex;
+}
+/*.check-boxes{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}*/
+
+/*.div-lower{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(52, 214, 79);
+}*/
+.classmates{
+  width: 300px;
+  height: auto;
+}
+.check-boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.bottomright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 50px;
+}
+.div-lower{
+  display: flex;
+  align-items: baseline;
+}
+.b-day{
+  height: auto;
+  width: 250px;
+}
+
+@media (max-width: 700px) {
+  .container{
+    display: grid;
+    grid-template-rows: 10%  30% 20% 20% 20%;
+  }
+  .div-upper{
+    display: grid;
+    grid-row: 4/5;
+  }
+  .div-lower{
+    display: grid;
+    grid-row: 5/6;
+  }
+  }

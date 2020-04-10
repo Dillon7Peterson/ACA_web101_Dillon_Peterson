@@ -1,24 +1,28 @@
+
 body{
   display: grid;
   grid-template-columns: 65% 35%;
-  grid-template-rows: 10% 50% 40%;
+  grid-template-rows: 20% 45% 35%;
 }
+
 header{
   display: grid;
   grid-row: 1/2;
   grid-column: 1/3;
-  border: 5px solid black;
+  background-color: black;
 }
+
 main{
   width: auto;
   display: grid;
   grid-template-rows: 50% 50%;
   grid-row: 2/4;
-  grid-column: 1/2;  
+  grid-column: 1/2; 
+  background-color: transparent; 
 }
 
 section{
-  background-color: rgb(13, 155, 238);
+  /*background-color: rgb(13, 155, 238);*/
 }
 .bottom{
   display: flex;
@@ -27,11 +31,6 @@ section{
   grid-row: 2/3;
 }
 
-
-/*div{
-  border: 10px solid red;
-  background-color: burlywood;
-}*/
 h2{
   display: flex;
   align-items: center;
@@ -40,6 +39,9 @@ h2{
 .div-upper{
   display: grid;
   grid-template-rows: 75% 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 h3{
   display: grid;
@@ -50,23 +52,8 @@ h3{
   text-size: 50px;
 }
 form{
-  border: 5px solid black;
   display: flex;
 }
-/*.check-boxes{
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}*/
-
-/*.div-lower{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(52, 214, 79);
-}*/
 .classmates{
   width: 300px;
   height: auto;
@@ -74,9 +61,11 @@ form{
 .check-boxes{
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;  
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 25px;
+  height: auto;
 }
 .bottomright{
   display: flex;
@@ -88,16 +77,27 @@ form{
 .div-lower{
   display: flex;
   align-items: baseline;
+  background-color: rgb(5, 0, 0);
 }
 .b-day{
   height: auto;
   width: 250px;
 }
+textarea{
+  width: 150px;
+  height: auto;
+}
 
-@media (max-width: 700px) {
+.emailAddress{
+  width: 395px;
+  height: 25px;
+}
+
+@media (max-width: 750px) {
   .container{
     display: grid;
     grid-template-rows: 10%  30% 20% 20% 20%;
+    grid-template-columns: auto;
   }
   .div-upper{
     display: grid;
@@ -107,4 +107,37 @@ form{
     display: grid;
     grid-row: 5/6;
   }
+  .bottomright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .check-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  textarea{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+  @media (min-width: 751px){
+    .container{
+      display: grid;
+      grid-template-columns: 65% 35%;
+      grid-template-rows: 10% 50% 40%;
+    }
+    /*.top{
+      display: flex;
+      flex-direction: column;
+    }*/
+    /*.check-boxes{
+      display: flex;
+      flex-direction: column;
+    }*/
+
+
+  }
+  

@@ -9,6 +9,7 @@
 <body class="container">
   <header>Contact Me</header>
     <main>
+      <img src="tree-reflection.jpg" alt="background art">
       <section class="top">
         <h2>How did you hear about me?</h2>
           <form class="check-boxes">
@@ -26,13 +27,19 @@
                 <input type="checkbox" id="coding-academy" name="coding-academy" value="coding-academy">
                   <label for="coding-academy">Coding Academy Rec</label>
                 </div>
+                <textarea type="text" minlength="20" maxlength="400" id="textArea">
+                </textarea>
           
             </form>
           </section>
             
           </form>
         <section class="bottom">
-          <p>For a special birthday wish, use the selector below to share your date!</p>
+          <ul>
+            <li>For a special birthday wish<br>
+            the selector below to share your date!</li> 
+          </ul>
+            <br>
             <form class="b-day">
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" name="birthday">
@@ -41,9 +48,9 @@
     </main>
     <div class="div-upper">
       <h3>Share your Email</h3>
-        <form>
+        <form class="emailAddress">
           <label for="email-address">Email Address:</label><br>
-            <input type="text" id="email-address" name="email">
+            <input type="text" id="email-address" name="email" required>
         </form>
     </div>
     <div class="div-lower">

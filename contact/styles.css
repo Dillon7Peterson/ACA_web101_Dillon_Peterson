@@ -3,6 +3,7 @@ body{
   display: grid;
   grid-template-columns: 65% 35%;
   grid-template-rows: 20% 45% 35%;
+  background-image: url(./glow-balloons.jpg);
 }
 
 header{
@@ -10,6 +11,7 @@ header{
   grid-row: 1/2;
   grid-column: 1/3;
   background-color: black;
+  color: white;
 }
 
 main{
@@ -18,23 +20,22 @@ main{
   grid-template-rows: 50% 50%;
   grid-row: 2/4;
   grid-column: 1/2; 
-  background-color: transparent; 
 }
 
-section{
-  /*background-color: rgb(13, 155, 238);*/
-}
 .bottom{
   display: flex;
   justify-content: center;
   display: grid;
   grid-row: 2/3;
+  color: white;
+  font-size: 35px;
 }
 
 h2{
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: white;
+  font-size: 35px;
 }
 .div-upper{
   display: grid;
@@ -42,6 +43,7 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-position: inherit;
 }
 h3{
   display: grid;
@@ -49,48 +51,47 @@ h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-size: 50px;
+  color: black;
+  background-color: white;
 }
 form{
   display: flex;
 }
 .classmates{
-  width: 300px;
-  height: auto;
+  color: white;
 }
 .check-boxes{
   display: flex;
-  justify-content: center;
-  flex-direction: row;  
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-  height: auto;
+  flex-direction: column;
+  padding-top: 15px;
 }
 .bottomright{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  border: whitesmoke;
   padding: 50px;
   margin: 50px;
 }
 .div-lower{
   display: flex;
   align-items: baseline;
-  background-color: rgb(5, 0, 0);
 }
 .b-day{
   height: auto;
   width: 250px;
 }
 textarea{
-  width: 150px;
-  height: auto;
+  width: auto;
 }
 
 .emailAddress{
   width: 395px;
   height: 25px;
+  font-size: 25px;
+  color: black;
+  background-color: white;
 }
 
 @media (max-width: 750px) {
@@ -102,6 +103,8 @@ textarea{
   .div-upper{
     display: grid;
     grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
   }
   .div-lower{
     display: grid;
@@ -117,8 +120,15 @@ textarea{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 0%;
+    height: auto;
   }
   textarea{
+    display: flex;
+    justify-content: flex-end;
+    border: 10px solid white;
+  }
+  .b-day{
     display: flex;
     justify-content: flex-end;
   }

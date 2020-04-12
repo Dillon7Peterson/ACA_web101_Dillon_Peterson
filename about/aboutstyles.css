@@ -1,0 +1,80 @@
+body{
+  display: grid;
+  grid-template-rows: 15% 85%;
+  background-color: black;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 7, 202, 0.267);
+  color: white;
+  font-size: 40px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  /*padding: 10%;*/
+  grid-row: 2/3;
+
+}
+
+section{
+  border: 5px solid black;
+
+}
+
+.image{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-left: 10%;
+  background-image: url(./Dillon-suit.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.list{
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: white;
+
+}
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgb(94, 2, 2);
+  color: white;
+}
+
+@media (max-width: 650px){
+  main{
+    display: grid;
+    grid-template-rows: 15% 50% 35%;
+    grid-template-columns: 90% 10%;
+
+  }
+
+  .image{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+  }
+  .list{
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  
+
+}

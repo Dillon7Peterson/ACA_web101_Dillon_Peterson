@@ -22,9 +22,7 @@ main{
   grid-template-rows: 33% 34% 33%;
 
 }
-/* div{
-   border: 3px solid black;
-} */
+
 
 .left-top{
   display: grid;
@@ -34,11 +32,6 @@ main{
   justify-content: space-evenly;
 }
 
-/* .hello-pic{
-  display: grid;
-  grid-row: 1/2;
-  width: 100%; 
-} */
 
 .left-center{
   display: grid;
@@ -54,15 +47,12 @@ main{
   flex-direction: row;
 }
 
-/* .right-bottom{
-  height: 40%; 
-
-} */
 
 section{
   display: grid;
   grid-column: 2/3;
   grid-row: 1/4;
+  
   /* border: 3px solid red; */
 }
 .upper-left{
@@ -73,6 +63,7 @@ section{
 .upper-right{
   display: flex;
   align-items: center;
+  display: block;
 }
 
 .right-bottom{
@@ -92,13 +83,11 @@ width: 35%;
 
 }
 .spaceship{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 75%;
+  display: block;
+  width: fit-content;
   padding: 20px;
-
 }
+
 middle{
   display: flex;
   justify-content: center;
@@ -123,7 +112,29 @@ middle{
   padding-right: 10px;
 }
 
-/* .all-pic{
-  width: 50%;
-  height: 65%;
+/* .overlay-ship {
+  position: absolute;
+  height: 62%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: black;
+  transition: .5s ease;
+  opacity: 0;
+
 } */
+
+/* .upper-right:hover .overlay-ship{
+  opacity: 1;
+} */
+/* 
+.text {
+  color: white;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+
+} */
+

@@ -66,6 +66,19 @@ section{
 .upper-right{
   display: flex;
   align-items: center;
+  background-image: url(./imagesForGallery/spaceship.jpg);
+}
+.upper-right:hover {
+  background-image: none;
+  background-color: blue;
+}
+
+.upper-right-p{
+  display: none;
+}
+
+.upper-right:hover .upper-right-p {
+  display: block;
 }
 
 .right-bottom{

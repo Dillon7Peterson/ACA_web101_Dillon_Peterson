@@ -1,6 +1,8 @@
+
 body{
   width: 100%;
   height: 100%;
+  background-color: rgb(204, 204, 236);
 }
 
 header{
@@ -9,7 +11,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: xx-large;
+  /* font-size: xx-large; */
 
 }
 .header-pic{
@@ -18,59 +20,179 @@ header{
 }
 
 main{
-  height: 85%;
+  height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 33% 34% 33%;
 
 }
 
-
 .left-top{
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-row: 1/2;
-  width: 100%; 
-  display: flex;
-  justify-content: space-evenly;
-}
+  }
+
+  .tree-pic{
+    background-image: url(./imagesForGallery/tree-reflection.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .tree-pic:hover {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .tree-quote {
+    color: white;
+    display: none;
+
+  }
+
+  .tree-pic:hover .tree-quote{
+    color: black;
+
+  }
+
 
 
 .left-center{
   display: grid;
   grid-row: 2/3;
+} 
+
+.middle{
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./imagesForGallery/youbelonghere.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.middle:hover {
+  background-image: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.belong {
+  color: white;
+  display: none;
+}
+
+.middle:hover .belong {
+  display: block;
+  color: white;
+}
+
 
 .left-bottom{
   display: grid;
   grid-row: 3/4;
-}
-.bottom-pics{
   display: flex;
   flex-direction: row;
-  padding: 0%;
+}
+
+.bottom-pics-left {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-image: url(./imagesForGallery/escape-rooms-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.bottom-pics-left:hover {
+    background-image: none;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .escape-rooms{
+    display: none;
+    color: rgb(245, 239, 239);
+  }
+
+  .bottom-pics-left:hover .escape-rooms{
+    display: block;
+    color: white;
+  }
+
+.bottom-pics-right{
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-image: url(./imagesForGallery/sun-tree-jump-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition:  1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.bottom-pics-right:hover {
+    background-image: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sun-tree{
+  display: none;
+  color: white;
+
+  
+}
+
+.bottom-pics-right:hover .sun-tree {
+  display: block;
+  color: white;
 }
 
 
 section{
+  display: block;
   display: grid;
+  grid-template-rows: 70% 30%;;
   grid-column: 2/3;
   grid-row: 1/4;
-  
-  /* border: 3px solid red; */
-}
-.upper-left{
-  display: flex;
-  justify-content: space-evenly;
 }
 
+
 .upper-right{
+  display: grid;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  background-image: url(./imagesForGallery/spaceship.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  transition: 1s ease;
   display: flex;
   align-items: center;
-  background-image: url(./imagesForGallery/spaceship.jpg);
+  justify-content: center;
+
 }
+
 .upper-right:hover {
   background-image: none;
-  background-color: blue;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .upper-right-p{
@@ -79,76 +201,39 @@ section{
 
 .upper-right:hover .upper-right-p {
   display: block;
+  color: white;
 }
 
 .right-bottom{
+  display: grid;
+  grid-row: 2/3;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: x-large;
 }
 
-.hello-pic{
-width: 35%;
-}
 
-.leopard-pic{
-  width: 50%;
+@media (max-width: 768px) {
+  /* body{
+    display: grid;
+    grid-template-rows: 10% 90%;
 
-}
-.spaceship{
-  display: block;
-  width: fit-content;
-  padding: 20px;
-}
+  } */
 
-middle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.you-belong{
-  width: 100%;
-  height: 85%;
+  header {
+    /* display: grid;
+    grid-row: 1/2; */
   
+  }
+
+  main {
+    /* display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;;
+    grid-row: 2/3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-
-.sun-jump{
-  width: 50%;
-  height: auto;
-  padding-left: 10px;
-}
-
-.escape-rooms{
-  width: 50%;
-  height: auto;
-  padding-right: 10px;
-}
-
-/* .overlay-ship {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  transition: .5s ease;
-  opacity: 0;
-  background-color: blue;
-
-} */
-
-/* .upper-right:hover .overlay-ship{
-  opacity: 1;
-} */
-/* 
-.text {
-  color: white;
-  font-size: 20px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-
-
-} */
-
+ 

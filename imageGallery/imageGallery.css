@@ -36,9 +36,13 @@ main{
 
   .tree-pic{
     background-image: url(./imagesForGallery/tree-reflection.jpg);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
 
   }
 
@@ -208,32 +212,62 @@ section{
   display: grid;
   grid-row: 2/3;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 @media (max-width: 768px) {
-  /* body{
-    display: grid;
-    grid-template-rows: 10% 90%;
+  body {
+    padding: 0;
+    margin: 0;
+  }
 
-  } */
-
-  header {
-    /* display: grid;
-    grid-row: 1/2; */
+header {
+  background-color: black;
+  color: white;
+  font-size: 10%;
+  height:15%;
   
   }
 
-  main {
-    /* display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;;
-    grid-row: 2/3; */
+main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
+.left-top{
+    display: block;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+    /* display: grid;
+    grid-row: 1/2; */
+    }
+
+.left-center{
+    height: 25%;
+      /* display: grid;
+      grid-row: 2/3; */
+    } 
+
+.left-bottom{
+  height: 25%;
+      /* display: grid;
+      grid-row: 3/4; */
+      display: flex;
+      flex-direction: row;
+}
+
+section{
+    height: 25%;
+        display: block;
+        display: grid;
+        grid-template-rows: 70% 30%;;
+        grid-column: 2/3;
+        grid-row: 1/4;
+}
+
+
+
 }
  

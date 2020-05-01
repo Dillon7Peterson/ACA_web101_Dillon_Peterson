@@ -1,0 +1,97 @@
+body {
+  
+}
+
+header {
+  background-color: cornflowerblue;
+
+}
+ 
+.logo {
+
+  
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'main main'
+  'main main'
+  'left-top right-top'
+  'left-bottom right-bottom';
+  border: 2px solid black;
+
+
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myPicture {
+  border: 10px solid black;
+}
+
+/* .profile-image{
+  min-height: 300px;
+  background-image: url(./myProfilePic2.jpg);
+  background-repeat: no-repeat;
+  
+} */
+
+
+
+.resume-section{
+  grid-area: right-top;
+  border: 2px solid black;
+  min-height: 250px;
+  width: auto;
+
+}
+ 
+.about-me-section {
+  grid-area: left-top;
+  border: 2px solid black;
+  min-height: 250px;
+  width: auto;
+}
+
+.my-blog-section {
+   grid-area: left-bottom;
+    border: 2px solid black;
+    min-height: 250px;
+}
+ 
+.contact-me-section {
+  grid-area: right-bottom;
+  border: 2px solid black;
+  min-height: 250px;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid black;
+}
+
+ 
+
+ 
+  /* button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 70%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: white;
+    letter-spacing: 16px;
+    font-style: italic;
+  } */

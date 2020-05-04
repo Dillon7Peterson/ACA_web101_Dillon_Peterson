@@ -1,80 +1,112 @@
-body{
-  display: grid;
-  grid-template-rows: 15% 85%;
-  background-color: black;
+body {
+  background-color: rgb(48, 42, 42);
 }
-header{
+
+header {
+  background-color: mediumseagreen;
+
+}
+
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'main main'
+  'main main'
+  'left-top right-top'
+  'left-bottom right-bottom';
+
+
+}
+
+.main {
+  grid-area: main;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(43, 7, 202, 0.267);
   color: white;
-  font-size: 40px;
 }
 
-main{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  /*padding: 10%;*/
-  grid-row: 2/3;
 
-}
 
-section{
-  border: 5px solid black;
 
-}
 
-.image{
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  padding-left: 10%;
-  background-image: url(./Dillon-suit.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.list{
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  background-color: white;
-
-}
-ul{
+.reading-section{
+  margin: 10px;
+  grid-area: right-top;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 20px;
-  font-weight: bolder;
-  background-color: rgb(94, 2, 2);
+  justify-content: center;
   color: white;
+  border: 1em solid rgba(25, 129, 199, 0.507);
+  min-height: 250px;
+  width: auto;
+  background-color: mediumseagreen;
+  border-radius: 200px;
+
 }
-
-@media (max-width: 650px){
-  main{
-    display: grid;
-    grid-template-rows: 15% 50% 35%;
-    grid-template-columns: 90% 10%;
-
-  }
-
-  .image{
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 1/2;
-
-  }
-  .list{
-    display: grid;
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-
+ 
+.health-section {
+  margin: 10px;
+  grid-area: left-top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  width: auto;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
+ 
   
+}
+
+.food-section {
+  margin: 10px;
+   grid-area: left-bottom;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+    border: 1em solid rgba(25, 129, 199, 0.507);
+    min-height: 250px;
+    background-color: mediumseagreen;
+    border-radius: 200px;
+}
+ 
+.gaming-section {
+  margin: 10px;
+  grid-area: right-bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1em solid mediumseagreen;
+  min-height: 250px;
+  background-color: rgba(25, 129, 199, 0.507);
+  border-radius: 200px;
+}
+
+footer {
+  border: 2px solid black;
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+    display: grid;
+    grid-template-areas: 
+    'main'
+    'main'
+    'left-top'
+    'right-top'
+    'left-bottom' 
+    'right-bottom';
+
+}
+
+
 
 }

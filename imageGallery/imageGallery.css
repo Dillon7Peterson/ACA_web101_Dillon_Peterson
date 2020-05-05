@@ -1,40 +1,156 @@
 
-body{
-  width: 100%;
+body {
   height: 100%;
-  background-color: rgb(204, 204, 236);
+  background-color: rgb(234, 234, 243);
 }
 
-header{
-  height: 15%;
-  width: 100%;
+
+main {
+  height: inherit;
+  display: grid;
+  grid-template-areas: 
+  'left top top'
+  'left top top'
+  'left center right'
+  'bottom bottom right'
+  'bottom bottom right';
+  
+}
+
+.main-top {
+  grid-area: top;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* font-size: xx-large; */
+  flex-direction: row;
+  border: 2px solid black;
+  margin: .5em;
 
-}
-.header-pic{
-  width: 100%;
-  height: 10%;
-}
-
-main{
-  height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 34% 33%;
-
-}
-
-.left-top{
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-row: 1/2;
   }
 
-  .tree-pic{
+  .top-center-img {
+    width: 50%;
+    border: 2px solid blue;
+    margin: .5em;
+  }
+
+
+
+.right-img-one {
+  border: 2px solid blue;
+  width: 50%;
+  margin: .5em;
+  background-image: url(./imagesForGallery/sun-tree-jump-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-left {
+    margin: .5em;
+    grid-area: left;
+    height: auto;
+    border: 2px solid black;
+   
+} 
+
+.left-img-one {
+  display: block;
+  border: 2px solid blue;
+  height: 30%;
+  margin: .5em;
+  background-image: url(./imagesForGallery/spaceship.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-img-two {
+  display: block;
+  border: 2px solid blue;
+  height: 30%;
+  margin: .5em;
+
+}
+
+.left-img-three {
+  display: block;
+  border: 2px solid blue;
+  height: 30%;
+  margin: .5em;
+
+}
+
+
+
+.main-center {
+  grid-area: center;
+  border: 2px solid black;
+
+}
+
+.main-right{
+  margin: .5em;
+  grid-area: right;
+  border: 2px solid black;
+}
+
+.right-img-two {
+  height: 30%;
+  margin: .5em;
+  border: 2px solid blue;
+  background-image: url(./imagesForGallery/tree-reflection.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.right-img-three {
+  height: 30%;
+  margin: .5em;
+  border: 2px solid blue;
+  background-image: url(./imagesForGallery/youbelonghere.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-img-four {
+  height: 30%;
+  margin: .5em;
+  border: 2px solid blue;
+  background-image: url(./imagesForGallery/escape-rooms-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.main-bottom {
+  grid-area: bottom;
+  margin: .5em;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+ 
+}
+
+.left-img-four {
+  width: 50%;
+    border: 2px solid blue;
+    margin: .5em;
+}
+
+.bottom-center-img {
+  width: 50%;
+    border: 2px solid blue;
+    margin: .5em;
+}
+
+
+
+
+
+  /* .tree-pic{
     background-image: url(./imagesForGallery/tree-reflection.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -44,14 +160,14 @@ main{
     margin: 0;
     padding: 0;
 
-  }
+  } */
 
-  .tree-pic:hover {
+  /* .tree-pic:hover {
     display: none;
-    background: rgba(0, 0, 0, 0.5);
-  }
+    /* background: rgba(0, 0, 0, 0.5); 
+  } */
 
-  .tree-quote {
+  /* .tree-quote {
     color: white;
     display: none;
 
@@ -60,16 +176,10 @@ main{
   .tree-pic:hover .tree-quote{
     color: black;
 
-  }
+  } */
 
 
-
-.left-center{
-  display: grid;
-  grid-row: 2/3;
-} 
-
-.middle{
+/* .middle{
   width: 95%;
   margin: 0;
   padding: 0;
@@ -96,17 +206,9 @@ main{
 .middle:hover .belong {
   display: block;
   color: white;
-}
+} */
 
-
-.left-bottom{
-  display: grid;
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: row;
-}
-
-.bottom-pics-left {
+/* .bottom-pics-left {
   width: 90%;
   margin: 0;
   padding: 0;
@@ -115,9 +217,9 @@ main{
   background-size: contain;
   background-repeat: no-repeat;
   transition: 1s ease;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   
 }
 
@@ -134,9 +236,9 @@ main{
   .bottom-pics-left:hover .escape-rooms{
     display: block;
     color: white;
-  }
+  } */
 
-.bottom-pics-right{
+/* .bottom-pics-right{
   width: 90%;
   margin: 0;
   padding: 0;
@@ -144,10 +246,7 @@ main{
   background-image: url(./imagesForGallery/sun-tree-jump-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  transition:  1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition:  1s ease; 
  
 }
 
@@ -166,19 +265,20 @@ main{
 .bottom-pics-right:hover .sun-tree {
   display: block;
   color: white;
-}
+} */
 
 
-section{
+/* section{
   display: block;
   display: grid;
   grid-template-rows: 70% 30%;;
   grid-column: 2/3;
   grid-row: 1/4;
-}
+} */
 
 
-.upper-right{
+
+/* .upper-right{
   display: grid;
   grid-row: 1/2;
   margin: 0;
@@ -192,9 +292,9 @@ section{
   align-items: center;
   justify-content: center;
 
-}
+} */
 
-.upper-right:hover {
+/* .upper-right:hover {
   background-image: none;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -206,68 +306,5 @@ section{
 .upper-right:hover .upper-right-p {
   display: block;
   color: white;
-}
+} */
 
-.right-bottom{
-  display: grid;
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-@media (max-width: 768px) {
-  body {
-    padding: 0;
-    margin: 0;
-  }
-
-header {
-  background-color: black;
-  color: white;
-  font-size: 10%;
-  height:15%;
-  
-  }
-
-main {
-    display: flex;
-    flex-direction: column;
-  }
-.left-top{
-    display: block;
-    height: 25%;
-    margin: 0;
-    padding: 0;
-    /* display: grid;
-    grid-row: 1/2; */
-    }
-
-.left-center{
-    height: 25%;
-      /* display: grid;
-      grid-row: 2/3; */
-    } 
-
-.left-bottom{
-  height: 25%;
-      /* display: grid;
-      grid-row: 3/4; */
-      display: flex;
-      flex-direction: row;
-}
-
-section{
-    height: 25%;
-        display: block;
-        display: grid;
-        grid-template-rows: 70% 30%;;
-        grid-column: 2/3;
-        grid-row: 1/4;
-}
-
-
-
-}
- 

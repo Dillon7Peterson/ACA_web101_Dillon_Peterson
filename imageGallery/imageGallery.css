@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  height: 40px;
   color: white;
 }
 
@@ -70,7 +70,7 @@ main {
   }
 
   .top-center-img:hover .overlay-eclipse .top-center-text{
-    font-size: 25px;
+    font-size: 20px;
   }
 
 
@@ -108,31 +108,59 @@ main {
 }
 
 .right-img-one:hover .overlay-wood .wood-text{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .main-left {
-    margin: .2em;
     grid-area: left;
     height: auto;
     background-color: rgba(25, 129, 199, 0.507);
+
    
 } 
 
 .left-img-one {
   display: block;
   height: 30%;
-  margin: .2em;
+  margin: .5em;
   background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
 }
+.overlay-topWater {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-img-one:hover {
+  transition: ease 1s;
+  opacity: .5;
+  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+.left-img-one:hover .overlay-topWater {
+  opacity: 1;
+  color: white;
+
+}
+
+.left-img-one:hover .overlay-topWater .topWater-text{
+  font-size: 20px;
+}
 
 .left-img-two {
   display: block;
-  height: 30%;
-  margin: .2em;
+  height: 32%;
+  margin: .5em;
   background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -140,10 +168,39 @@ main {
 
 }
 
+.overlay-midWater {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-img-two:hover {
+  transition: ease 1s;
+  opacity: .5;
+  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.left-img-two:hover .overlay-midWater {
+  opacity: 1;
+  color: white;
+
+}
+
+.left-img-two:hover .overlay-midWater .midWater-text{
+  font-size: 20px;
+}
+
 .left-img-three {
   display: block;
-  height: 30%;
-  margin: .2em;
+  height: 32%;
+  margin: .5em;
   background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -151,11 +208,41 @@ main {
 
 }
 
+.overlay-bottomWater {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-img-three:hover {
+  transition: ease 1s;
+  opacity: .5;
+  background-image: url(./imagesForGallery/waterTwo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+.left-img-three:hover .overlay-bottomWater{
+  opacity: 1;
+  color: white;
+
+}
+
+.left-img-three:hover .overlay-bottomWater .bottomWater-text{
+  font-size: 20px;
+}
+
 
 
 .main-center {
   grid-area: center;
-  border: 2px solid black;
+  border: 10px solid mediumseagreen;
+  background-color: rgb(58, 58, 59);
 
 }
 
@@ -168,31 +255,119 @@ main {
 
 .right-img-two {
   height: 30%;
-  margin: .2em;
-  background-color: rgb(0, 0, 0);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-
-}
-
-.right-img-three {
-  height: 30%;
-  margin: .2em;
-  background-image: url(./imagesForGallery/fire-unsplash.jpg);
+  margin: .5em;
+  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
+
+
+}
+
+.overlay-topFire {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-img-two:hover {
+  transition: ease 1s;
+  opacity: .5;  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+}
+
+.right-img-two:hover .overlay-topFire{
+  opacity: 1;
+  color: white;
+
+}
+
+.right-img-two:hover .overlay-topFire .topFire-text{
+  font-size: 20px;
+}
+
+.right-img-three {
+  height: 32%;
+  margin: .5em;
+  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-midFire {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-img-three:hover {
+  transition: ease 1s;
+  opacity: .5;
+  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.right-img-three:hover .overlay-midFire{
+  opacity: 1;
+  color: white;
+
+}
+
+.right-img-three:hover .overlay-midFire .midFire-text{
+  font-size: 20px;
 }
 
 .right-img-four {
-  height: 30%;
-  margin: .2em;
-  background-image: url(./imagesForGallery/fire-unsplash.jpg);
+  height: 32%;
+  margin: .5em;
+  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.overlay-bottomFire {  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-img-four:hover {
+  transition: ease 1s;
+  opacity: .5;
+  background-image: url(./imagesForGallery/fireThree-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+.right-img-four:hover .overlay-bottomFire{
+  opacity: 1;
+  color: white;
+
+}
+
+.right-img-four:hover .overlay-bottomFire .bottomFire-text{
+  font-size: 20px;
 }
 
 
@@ -292,164 +467,4 @@ main {
 }
 
 
-
-
-
-  /* .tree-pic{
-    background-image: url(./imagesForGallery/tree-reflection.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-
-  } */
-
-  /* .top-center-img:hover {
-    display: none;
-    /* background: rgba(0, 0, 0, 0.5); 
-  } */
-
-  /* .tree-quote {
-    color: white;
-    display: none;
-
-  }
-
-  .tree-pic:hover .tree-quote{
-    color: black;
-
-  } */
-
-
-/* .middle{
-  width: 95%;
-  margin: 0;
-  padding: 0;
-  background-image: url(./imagesForGallery/youbelonghere.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.middle:hover {
-  background-image: none;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.belong {
-  color: white;
-  display: none;
-}
-
-.middle:hover .belong {
-  display: block;
-  color: white;
-} */
-
-/* .bottom-pics-left {
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  background-image: url(./imagesForGallery/escape-rooms-unsplash.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: 1s ease;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; 
-  
-}
-
-.bottom-pics-left:hover {
-    background-image: none;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .escape-rooms{
-    display: none;
-    color: rgb(245, 239, 239);
-  }
-
-  .bottom-pics-left:hover .escape-rooms{
-    display: block;
-    color: white;
-  } */
-
-/* .bottom-pics-right{
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  background-image: url(./imagesForGallery/sun-tree-jump-unsplash.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition:  1s ease; 
- 
-}
-
-.bottom-pics-right:hover {
-    background-image: none;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.sun-tree{
-  display: none;
-  color: white;
-
-  
-}
-
-.bottom-pics-right:hover .sun-tree {
-  display: block;
-  color: white;
-} */
-
-
-/* section{
-  display: block;
-  display: grid;
-  grid-template-rows: 70% 30%;;
-  grid-column: 2/3;
-  grid-row: 1/4;
-} */
-
-
-
-/* .upper-right{
-  display: grid;
-  grid-row: 1/2;
-  margin: 0;
-  padding: 0;
-  background-image: url(./imagesForGallery/spaceship.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  transition: 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-} */
-
-/* .upper-right:hover {
-  background-image: none;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.upper-right-p{
-  display: none;
-}
-
-.upper-right:hover .upper-right-p {
-  display: block;
-  color: white;
-} */
 
